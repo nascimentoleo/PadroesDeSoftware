@@ -10,7 +10,7 @@ public class ServidorWeb implements RepositorioDeConfiguracoes {
 	@Override
 	public String getConfiguracoes(String nome) {
 		try {
-			URL url = new URL("192.168.0.1");
+			URL url = new URL("localhost");
 			InputStream is = url.openStream();
 			String valorConfiguracao = is.toString();
 			if(valorConfiguracao != null)
