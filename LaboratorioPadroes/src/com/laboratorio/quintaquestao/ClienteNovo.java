@@ -1,11 +1,12 @@
 package com.laboratorio.quintaquestao;
 
+import java.math.BigDecimal;
+
 public class ClienteNovo implements DescontoStrategy{
 
 	@Override
-	public double desconto(Cliente cliente, NotaFiscal nota) {
-		// TODO Auto-generated method stub
-		return 0;
+	public BigDecimal desconto(Cliente cliente, NotaFiscal nota) {
+		return null;
 	}
 
 }

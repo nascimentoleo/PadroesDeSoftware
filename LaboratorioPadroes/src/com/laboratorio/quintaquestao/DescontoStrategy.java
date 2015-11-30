@@ -1,7 +1,9 @@
 package com.laboratorio.quintaquestao;
 
+import java.math.BigDecimal;
+
 public interface DescontoStrategy {
 	
-	public double desconto(Cliente cliente, NotaFiscal nota);
+	public BigDecimal desconto(Cliente cliente, NotaFiscal nota);
 
 }

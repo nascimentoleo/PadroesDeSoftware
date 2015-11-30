@@ -1,19 +1,21 @@
 package com.laboratorio.quintaquestao;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Item {
 
 	private Produto produto;
-	private double valor;
+	private BigDecimal valor;
 	private int quantidade;
 	
-	public Item(Produto produto, double valor, int quantidade) {
+	public Item(Produto produto, int quantidade) {
 		this.produto = produto;
-		this.valor = valor;
+		this.valor = produto.valorPorQuantidade(quantidade);
 		this.quantidade = quantidade;
 	}
 	
-	public double getValor() {
+	public BigDecimal getValor() {
 		return valor;
 	}
 	
@@ -21,8 +23,8 @@ public class Item {
 		return quantidade;
 	}
 	
-	public double calculaDesconto(double taxa){
-		return this.valor * taxa;
+	public BigDecimal calculaDesconto(BigDecimal taxa){
+		return this.valor.multiply(taxa);
 	}
 	
 	public Produto getProduto() {
