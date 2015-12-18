@@ -1,5 +1,7 @@
 package com.template_method.questao01;
 
+
+
 public class ImpostoIKCV extends TemplateImposto {
 	
 	@Override

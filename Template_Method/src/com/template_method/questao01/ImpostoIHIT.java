@@ -1,5 +1,6 @@
 package com.template_method.questao01;
 
+
 public class ImpostoIHIT extends TemplateImposto {
 	
 	@Override

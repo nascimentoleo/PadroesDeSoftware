@@ -1,5 +1,6 @@
 package com.template_method.questao01;
 
+
 public abstract class TemplateImposto {
 	
 	public double calculaImposto(Orcamento orcamento){
